@@ -1,0 +1,32 @@
+{
+    "name": "tecnogo/laravel-meli-sdk",
+    "description": "Laravel package for MeliSDK",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Valentin Starck",
+            "email": "valentin.starck@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^5.8",
+        "tecnogo/meli-sdk": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tecnogo\\LaravelMeliSdk\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tecnogo\\LaravelMeliSdk\\ServiceProvider"
+            ],
+            "aliases": {
+                "MeliSdk": "Tecnogo\\LaravelMeliSdk\\Facade"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
