@@ -22,11 +22,10 @@
 
 // Obtener bookmarks:
 
-$bookmarks = \MeliSdk::bookmarks();
+$bookmarks = \MeliSdk::categories();
 
-$bookmarks->each(function (\Tecnogo\MeliSdk\Entity\LoggedUser\Bookmark $bookmark) {
-    $item = $bookmark->item();
-    echo $item->title() . "\n";
-    echo json_encode($item->attributes()->simplifiedMap());
+$bookmarks->each(function (\Tecnogo\MeliSdk\Entity\Category\Category $category) {
+    echo $category->name() . "\n";
+    echo json_encode($item->attributes());
 });
 ```
