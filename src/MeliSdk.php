@@ -75,4 +75,17 @@ final class MeliSdk
 
         return $config;
     }
+
+    /**
+     * @param $token
+     * @return Client
+     */
+    public function withToken($token)
+    {
+        $clone = clone $this->client;
+
+        $clone->getConfig()->setAccessToken($token);
+
+        return $clone;
+    }
 }
