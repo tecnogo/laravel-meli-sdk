@@ -17,6 +17,7 @@ final class ServiceProvider extends \Illuminate\Support\ServiceProvider
     public function boot()
     {
         $this->publishesConfig();
+        $this->loadRoutesFrom(__DIR__.'/routes.php');
     }
 
     protected function publishesConfig()
