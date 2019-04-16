@@ -15,11 +15,7 @@ final class MeliSdkController extends Controller
 {
     public function handleMercadolibreAuthResponse(Request $request)
     {
-        if ($request->code) {
-            event(new AccessTokenReceived(\MeliSdk::login($request->code)->getAccessToken()));
-        } else {
-            // Something went wrong
-        }
+        \Event::dispatch(new AccessTokenReceived(\MeliSdk::login($request->code)->getAccessToken()));
 
         return \Redirect::to('/');
     }
