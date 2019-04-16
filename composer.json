@@ -11,9 +11,9 @@
     ],
     "require": {
         "illuminate/support": "^5.8",
-        "tecnogo/meli-sdk": "dev-master",
-        "illuminate/routing": "^5.9",
-        "illuminate/events": "^5.9"
+        "illuminate/routing": "^5.8",
+        "illuminate/events": "^5.8",
+        "tecnogo/meli-sdk": "dev-master"
     },
     "autoload": {
         "psr-4": {
