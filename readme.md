@@ -62,3 +62,11 @@ $bookmarkPrices = $bookmarks
     })
     ->toArray();
 ```
+
+### Ejemplos
+
+ * [Listado de publicaciones de usuario](https://github.com/tecnogo/meli-examples-my-items)
+
+### Licencia
+
+Este proyecto está bajo licencia MIT. Para más información: [LICENSE](https://raw.githubusercontent.com/tecnogo/meli-sdk/master/LICENSE)
