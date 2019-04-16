@@ -46,7 +46,7 @@ final class MeliSdk
         $this->app = $app;
         $this->version = $app->version();
         $this->config = $this->digestConfig($app);
-        $this->client = new Client($this->config);
+        $this->client = Client::create($this->config);
     }
 
     /**
