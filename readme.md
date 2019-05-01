@@ -65,6 +65,7 @@ $bookmarkPrices = $bookmarks
 
 ### Ejemplos
 
+ * [Laravel+Vue: Navegación de metadatos de sitios de Mercadolibre](https://github.com/aijoona/meli-examples-sites-navigation)
  * [Listado de publicaciones de usuario](https://github.com/tecnogo/meli-examples-my-items)
 
 ### Licencia
