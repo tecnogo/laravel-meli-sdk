@@ -14,7 +14,7 @@
         "illuminate/routing": "^5.8",
         "illuminate/events": "^5.8",
         "tecnogo/meli-sdk": "dev-master",
-        "illuminate/console": "^5.9@dev"
+        "illuminate/console": "^5.8"
     },
     "autoload": {
         "psr-4": {
